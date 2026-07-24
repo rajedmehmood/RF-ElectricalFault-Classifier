@@ -92,8 +92,12 @@ Covers:
 ## Key Technical Findings
 
 ### 1. n_estimators Plateau
-Accuracy stabilises at **n_estimators = 100**. Additional trees beyond this threshold
-produce no meaningful improvement. All final models use `n_estimators=100`.
+Accuracy stabilises at **n_estimators = 50**. Additional trees beyond this threshold
+produce no meaningful improvement. All final models use `n_estimators=50`.
+
+
+
+![n_estimators Plateau](n_estimators_plot.png)
 
 ### 2. Perfect Classification — 4 of 6 Fault Types
 LG, LL, LLG, and No Fault all achieve F1 = 1.00. The six-feature set
@@ -166,7 +170,7 @@ during the September 2026 project kickoff.
 
 - [ ] Add `I_zero = (Ia + Ib + Ic) / 3` as a derived feature and retrain
 - [ ] Verify LLL/LLLG F1 improvement after zero-sequence feature addition
-- [ ] Run n_estimators plateau plot and add image to repository
+- [x] Run n_estimators plateau plot and add image to repository
 - [ ] Apply this RF pipeline to SmartNode-PK's ESP32 deployment via Edge Impulse
 
 ---
@@ -193,6 +197,7 @@ RF-ElectricalFault-Classifier/
 ├── fault_classification_multiclass.ipynb # Multi-class: 6 IEEE fault types
 ├── detect_dataset.csv                    # Binary classification dataset
 ├── classData.csv                         # Multi-class classification dataset
+├── n_estimators_plot.png                 # N Estimators Plot
 ├── confusion_matrix.png                  # Confusion matrix — default RF model
 └── README.md
 ```
