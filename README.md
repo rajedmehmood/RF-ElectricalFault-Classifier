@@ -153,7 +153,7 @@ deployment.
 
 **Recommended hardware addition:** A neutral current sensor on the ground conductor
 enables zero-sequence current measurement and resolves this classification boundary.
-This finding will be raised with the SmartNode-PK supervisor (Dr. Bilal Ahmad, PhD AI)
+This finding will be raised with the SmartNode-PK supervisor (Dr. Bilal Ahmad, PhD)
 during the September 2026 project kickoff.
 
 | This Repository | SmartNode-PK (FYDP) |
